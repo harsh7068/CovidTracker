@@ -1,0 +1,58 @@
+.cards{
+    background-color: red;
+    height: 30rem;
+    margin-top: 1%;
+   
+    
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    
+}
+.RowCard{
+    height: 16rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    
+}
+.firstCard{
+    width: 20%;
+    height: 13rem;
+    background-color: white;
+    margin-left: 5%;
+    border-width: 2px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    border-radius: 8%;
+    background-color: rgba(102, 179, 255, 0.5) !important;
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+.secondCard{
+    width: 20%;
+    height: 13rem;
+    background-color: white;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    border-radius: 8%;
+    background-color: rgba(237, 178, 178, 0.5) !important;
+    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+.thirdCard{
+    width: 20%;
+    height: 13rem;
+    background-color: white;
+    margin-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    border-radius: 8%;
+    background-color: rgba(191, 242, 202, 0.5) !important;
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
