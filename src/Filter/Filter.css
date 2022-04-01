@@ -1,6 +1,6 @@
 .filter{
     background-color: rgb(243, 235, 235);
-    height: 5.5rem;
+    height: 6.2rem;
     justify-items: center;
     align-items: center;
 }
@@ -33,4 +33,10 @@
     justify-content: space-between;
    
     align-items: center;
+}
+.box{
+    background-color: transparent;
+    width: 12%;
+    height: 80%;
+    margin-left: 8%;
 }

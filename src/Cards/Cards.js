@@ -12,7 +12,7 @@ export class Cards extends React.Component {
       const url = "https://api.covid19api.com/summary";
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data.Global);
+      //console.log(data.Global);
       this.setState({NewConfirmed : data.Global.NewConfirmed});
       this.setState({TotalConfirmed : data.Global.TotalConfirmed});
       this.setState({NewDeaths : data.Global.NewDeaths});
@@ -23,6 +23,7 @@ export class Cards extends React.Component {
   }
   render() {
     return (
+      
       <div className="cards">
           <div className='RowCard'>          
          <div className='firstCard'>
@@ -46,6 +47,7 @@ export class Cards extends React.Component {
           </div>
           <div className='RowCard'>
           <div className='firstCard'>
+                
                 <h3>Total Confirmed</h3>
                 <h2>{this.state.TotalConfirmed}</h2>
                 <h4>Last Update at : {this.state.Date}</h4>
