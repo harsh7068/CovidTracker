@@ -3,8 +3,7 @@ import './App.css';
 import Header from './Header/Header';
 import Filter from './Filter/Filter';
 import Cards from './Cards/Cards';
-import API from './API/API';
-import CountryPicker from './CountryPicker/CountryPicker';
+
 function App() {
   return (
     <>

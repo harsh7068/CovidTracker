@@ -3,17 +3,25 @@ import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 
 import "./Filter.css";
 
 
 export class Filter extends PureComponent {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      
+      startDate : new Date()
     };
+    // this.handleChange = this.handleChange.bind(this);
+    // this.onFormSubmit = this.onFormSubmit.bind(this);
   }
+  
+  
+  
   async componentDidMount() {
     const url = "https://api.covid19api.com/summary";
     const response = await fetch(url);
@@ -65,6 +73,15 @@ export class Filter extends PureComponent {
         </NativeSelect>
       </FormControl>
     </Box>}  
+    <form onSubmit={this.onFormSubmit}>
+      <div className='form-group'>
+        <DatePicker
+          selected={this.state.startDate}
+          onChange={this.handleChange}
+          name="startDate"
+          dateFormat="MM/dd/yyyy"></DatePicker>
+      </div>
+    </form>
           </div>
           <div className='filterContent'>
               <p>Filters : </p>
